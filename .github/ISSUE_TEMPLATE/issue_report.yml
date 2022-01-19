@@ -1,0 +1,70 @@
+name: Issue Report
+description: Report an issue you don't know how to do and need the help!
+labels: "question"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thanks for asking the question!
+
+        Please write a clear title, then fill in as much details as possible.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+  - type: input
+    id: live_demo
+    attributes:
+      label: Provide a live demo link
+      description: For example, you can use [CodeSandBox](https://codesandbox.io/) to create a live demo
+      placeholder: |
+        e.g. https://codesandbox.io/s/naughty-chaum-ueluu
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the live demo link
+        2. Click on the button
+        3. ...
+
+        Attach any screenshot or video by drag and dropping or selecting upload.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected to happen?
+      placeholder: |
+        e.g. The background color should be changed
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      placeholder: |
+        e.g. Clicking the button does nothing.
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: (You may select more than one)
+      options:
+        - Google Chrome/Chromium
+        - Mozilla Firefox
+        - Microsoft Edge
+        - Apple Safari
+        - iOS Safari
+        - Android Chrome
+      multiple: true
+  - type: textarea
+    id: other_notes
+    attributes:
+      label: Other notes
+      placeholder: |
+        e.g. Logs, CLI or console errors, notes, observations, etc.

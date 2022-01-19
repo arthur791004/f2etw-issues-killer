@@ -1,4 +1,4 @@
-# 🗡 Issues Killer
+# Issues Killer 🗡
 
 Ask questions related to Frontend.
 
